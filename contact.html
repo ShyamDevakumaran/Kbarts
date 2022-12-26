@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KB-ARTS-CONTACT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"  />    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />    
+    <link rel = "stylesheet" type="text/css" href = "/css/main.css">
+    <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    
+     <!--NAVBAR-->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class = "navbar-brand d-flex justify-content-between align-items-center order-lg-0" href = "index.html">
+                <!--<img src = "/assets/img/Logo.jpg " alt = "" >-->
+                <span class = "text-uppercase fw-darker ms-2">KB-ARTS</span>
+            </a>
+          <!--<a class="navbar-brand ms-3" href="/index.html">KB-ARTS</a>-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class = "navbar-nav mx-auto text-center">
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "/index.html">HOME</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "/gallery.html">GALLERY</a>
+                </li>
+                <li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "/service.html">SERVICES</a>
+                </li>
+                <!--<li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#">TESTIMONALS</a>
+                </li>-->
+               
+                <!--<li class = "nav-item px-2 py-2">
+                    <a class = "nav-link text-uppercase text-dark" href = "#">ABOUT US</a>
+                </li>-->
+                <li class = "nav-item px-2 py-2 border-0">
+                    <a class = "nav-link text-uppercase text-dark" href = "/index.html">CONTACT</a>
+                </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+    <!--//NAVBAR-->
+
+
+
+    <!--CONTACT-->
+    <div class="relative hidden px-4 py-3 text-red-700 bg-red-100 text-center" id="alert" role="alert" >
+      <strong class="font-bold">ERROR!</strong>
+      <span class="block sm:inline">Pleaes fill your details correctly</span>
+  </div>
+
+  <div class="flex items-center hidden px-4 py-3 text-sm font-bold text-white bg-blue-500 text-center" id="success" role="alert">
+      <p text-center>Your form data has been submited successfully</p>
+  </div>
+
+  <section class="relative text-gray-600 body-font">
+      <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col w-full mb-12 text-center">
+              <h1 class="mb-4 text-2xl font-medium text-gray-900 sm:text-3xl title-font" style="border-bottom: 1.5px solid #000; color:#000;">CONTACT US</h1>
+              <p class="mx-auto text-base leading-relaxed lg:w-2/3"></p>
+          </div>
+          <div class="mx-auto lg:w-1/2 md:w-2/3">
+              <div class="flex flex-wrap -m-2">
+                  <div class="w-1/2 p-2">
+                      <div class="relative">
+                          <label for="name" class="text-sm leading-7 text-gray-600"style="font-weight:700";>NAME</label>
+                          <input type="text" id="name" name="name"
+                              class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+                              required>
+                      </div>
+                  </div>
+                  <div class="w-1/2 p-2">
+                      <div class="relative">
+                          <label for="email" class="text-sm leading-7 text-gray-600"style="font-weight:700";>EMAIL</label>
+                          <input type="email" id="email" name="email"
+                              class="w-full px-3 py-1 text-base leading-8 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+                              required>
+                      </div>
+                  </div>
+                  <div class="w-full p-2">
+                      <div class="relative">
+                          <label for="message" class="text-sm leading-7 text-gray-600"style="font-weight:700";>MESSAGE</label>
+                          <textarea id="message" name="message"
+                              class="w-full h-32 px-3 py-1 text-base leading-6 text-gray-700 transition-colors duration-200 ease-in-out bg-gray-100 bg-opacity-50 border border-gray-300 rounded outline-none resize-none focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200"
+                              required></textarea>
+                      </div>
+                  </div>
+                  <div class="w-full p-2">
+                      <button
+                          class="flex px-8 py-2 mx-auto text-lg text-white bg-indigo-500 border-0 rounded focus:outline-none hover:bg-indigo-600"
+                          onclick="send()" >Submit</button>
+                  </div>
+                 
+              </div>
+          </div>
+      </div>
+  </section>
+<!--//CONTACT-->
+
+
+    
+<!-- FOOTER -->
+<div class="container-footer">
+
+    <footer class="text-white text-center text-lg-start" >
+      <!-- Grid container -->
+      <div class="container p-4">
+        <!--Grid row-->
+        <div class="row mt-4">
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">KBARTS</h5>
+            <p>
+              We the KBARTS TEAM . We primarily with Charcoal, Graphite, and Colors.
+            We Customize your unmemorable photos and Memories in the form of Art.<br />
+            With Team , <br />
+            KBARTS&nbsp;<i class="fas fa-heart"></i>
+            </p>
+            <div class="mt-4">
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://m.facebook.com/profile.php?id=100067047714823&v=info&ref=ig_profile_no_ac&funlid=pEfL48PDX9rethEn"><i class="fab fa-facebook-f"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="https://instagram.com/_kbarts_?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+              <a type="button" class="btn btn-floating btn-light btn-lg" href="mailto:kirurajendran1313@gmail.com"><i class="fa-solid fa-envelope"></i></a> 
+              
+            </div>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4 pb-1">ADDRESS</h5>
+  
+            <div class="form-outline form-white mb-4">
+              
+            <div class="form-notch">
+              <div class="form-notch-leading" style="width: 9px;"></div>
+              <div class="form-notch-middle" style="width: 48.8px;"></div>
+              <div class="form-notch-trailing"></div></div></div>
+  
+            <ul class="fa-ul" style="margin-left: 1.65em;">
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">RS Puram ,Coimbatore, Tamil Nadu 642002,
+                  India.</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-envelope"></i></span><span class="ms-2">kirurajendran1313@gmail.com</span>
+              </li>
+              <li class="mb-3">
+                <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 91 63806 17563</span>
+              </li>
+              
+            </ul>
+          </div>
+          <!--Grid column-->
+  
+          <!--Grid column-->
+          <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Opening hours</h5>
+  
+            <table class="table text-center text-white">
+              <tbody class="font-weight-normal">
+                <tr>
+                  <td>Mon - Thu</td>
+                  <td>6am - 9pm</td>
+                </tr>
+                <tr>
+                  <td>Fri - Sat</td>
+                  <td>9am - 6am</td>
+                </tr>
+                <tr>
+                  <td>Sunday</td>
+                  <td>9am - ppm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" >
+        © 2022 Copyright. Designed & Developed by JELLYBINS.
+        <a class="text-white" ></a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+    
+  </div>
+  <!--//FOOTER -->
+  
+ 
+  
+<!--TOPUPBUTTON -->
+    <button
+            type="button"
+            class="btn btn-warning btn-floating btn-lg"
+            id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+    </button>
+
+<!--//TOPUP BUTTON -->
+  
+  
+  
+  
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/firebase.js"></script>
+      <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" ></script>
+</body>
+</html>
